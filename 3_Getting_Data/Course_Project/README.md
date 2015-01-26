@@ -1,7 +1,6 @@
-Course Project for Getting Data
+###Course Project for Getting Data
 
-Author: Scott Lin
-===================
+###Author: Scott Lin
 
 The files contained in this repo includes:
 
