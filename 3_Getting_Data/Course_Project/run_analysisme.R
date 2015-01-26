@@ -10,15 +10,15 @@ library(dplyr)
 ##1. Merges the training and the test sets to create one data set.
 #First thing here is to load the datasets
 
-testsubject <- read.table("./Course_Project/UCI HAR Dataset/test/subject_test.txt")
-testdata <- read.table("./Course_Project/UCI HAR Dataset/test/X_test.txt")
-testlabel <- read.table("./Course_Project/UCI HAR Dataset/test/Y_test.txt")
+testsubject <- read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/test/subject_test.txt")
+testdata <- read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/test/X_test.txt")
+testlabel <- read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/test/Y_test.txt")
 
 combinedtest <- cbind(subject = testsubject, label = testlabel, group = "test", data = testdata)
 
-trainsubject <- read.table("./Course_Project/UCI HAR Dataset/train/subject_train.txt")
-traindata <- read.table("./Course_Project/UCI HAR Dataset/train/X_train.txt")
-trainlabel <- read.table("./Course_Project/UCI HAR Dataset/train/Y_train.txt")
+trainsubject <- read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/train/subject_train.txt")
+traindata <- read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/train/X_train.txt")
+trainlabel <- read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/train/Y_train.txt")
 
 combinedtrain <- cbind(subject = trainsubject, label = trainlabel, group = "train", data = traindata)
 
@@ -26,7 +26,7 @@ data <- rbind(combinedtrain, combinedtest)
 
 ##2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-colnm <- as.character(read.table("./Course_Project/UCI HAR Dataset/features.txt")[,2])
+colnm <- as.character(read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/features.txt")[,2])
 datanm <- c("subject",  "label", "group", colnm)
 names(data) <- datanm
 
@@ -42,7 +42,7 @@ data2 <- cbind(data[1:3], meandf, sddf)
 
 ##3. Uses descriptive activity names to name the activities in the data set
 
-actlabels <- read.table("./Course_Project/UCI HAR Dataset/activity_labels.txt")
+actlabels <- read.table("./3_Getting_Data/Course_Project/UCI HAR Dataset/activity_labels.txt")
 names(actlabels) = c("id", "activity")
 
 data2$label <- with(actlabels, activity[match(data2$label, id)]) ##replaces label
@@ -67,4 +67,4 @@ groupdata <- group_by(finaldata, subject, activity, group)
 tidydata <- summarise_each(groupdata, funs(mean))
 
 ##6 Output
-write.table(tidydata, row.names=FALSE, file = "./Course_Project/tidydata.txt")
+write.table(tidydata, row.names=FALSE, file = "./3_Getting_Data/Course_Project/tidydata.txt")
