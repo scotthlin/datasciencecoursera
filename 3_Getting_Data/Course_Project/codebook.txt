@@ -1,4 +1,4 @@
-Code Book for Samsung Active Tracker Data Set
+Code Book for Samsung Active Tracker Data Set 
 
 
 Description:

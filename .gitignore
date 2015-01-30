@@ -1,1 +1,4 @@
 .httr-oauth
+.RData
+.RHistory
+.DS_Store
