@@ -1,0 +1,129 @@
+Code Book for Samsung Active Tracker Data Set 
+
+
+Description:
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+
+
+Variables:
+
+subject    int
+	Subject denotes the subject number for that row. There are 30 subjects in this 		experiment
+
+activity    factor character
+There are six activities that are being tracked.
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
+
+group    factor character
+Groups the subject into test or train groups
+1.	Test
+2.	Train
+
+tBodyAcc.mean.(X,Y,Z)    int
+Average of the mean acceleration values measured on the body for (X,Y,Z)-axis
+
+tGravityAcc.mean.(X,Y,Z)    int
+Average of the mean acceleration values measured through gravity for (X,Y,Z)-axis
+
+tBodyAccJerk.mean.(X,Y,Z)    int
+Average of the mean jerk signal acceleration values measured through body for (X,Y,Z)-axis
+
+tBodyGyro.mean.(X,Y,Z)    int
+Average of the mean gyro values measured through body for (X,Y,Z)-axis
+
+tBodyGyroJerk.mean.(X,Y,Z)    int
+Average of the mean jerk signal gyro values measured through body for (X,Y,Z)-axis
+
+tBodyAccMag.mean    int
+Average of the mean acceleration values using Euclidean form measured through body
+
+tGravityAccMag.mean    int
+Average of the mean gravity values using Euclidean form measured through body
+
+tBodyAccJerkMag.mean    int
+Average of the mean jerk signal acceleration values using Euclidean form measured through body
+
+tBodyGyroMag.mean    int
+Average of the mean gyro values using Euclidean form measured through body
+
+tBodyGyroJerkMag.mean    int
+Average of the mean jerk signal gyro values using Euclidean form measured through body
+
+fBodyAcc.mean.(X,Y,Z)    int
+Average of the mean acceleration values measured on the body for (X,Y,Z)-axis with a Fast Fourier Transform applied
+
+fBodyAccJerk.mean.(X,Y,Z)    int
+Average of the mean jerk signal acceleration values measured through body for (X,Y,Z)-axis with a Fast Fourier Transform applied
+
+fBodyGyro.mean.(X,Y,Z)    int
+Average of the mean gyro values measured through body for (X,Y,Z)-axis with a Fast Fourier Transform applied
+
+fBodyAccMag.mean    int
+Average of the mean acceleration values using Euclidean form measured through body with a Fast Fourier Transform applied with a Fast Fourier Transform applied
+
+fBodyAccJerkMag.mean    int
+Average of the mean jerk signal acceleration values using Euclidean form measured through body with a Fast Fourier Transform applied
+
+fBodyGyroMag.mean    int
+Average of the mean gyro values using Euclidean form measured through body with a Fast Fourier Transform applied
+
+fBodyGyroJerkMag.mean    int
+Average of the mean jerk signal gyro values using Euclidean form measured through body with a Fast Fourier Transform applied
+
+
+tBodyAcc.std.(X,Y,Z)    int
+Average of the standard deviation of acceleration values measured on the body for (X,Y,Z)-axis
+
+tGravityAcc.std.(X,Y,Z)    int
+Average of the standard deviation of acceleration values measured through gravity for (X,Y,Z)-axis
+
+tBodyAccJerk.std.(X,Y,Z)    int
+Average of the standard deviation of jerk signal acceleration values measured through body for (X,Y,Z)-axis
+
+tBodyGyro.std.(X,Y,Z)    int
+Average of the standard deviation of gyro values measured through body for (X,Y,Z)-axis
+
+tBodyGyroJerk.std.(X,Y,Z)    int
+Average of the standard deviation of jerk signal gyro values measured through body for (X,Y,Z)-axis
+
+tBodyAccMag.std    int
+Average of the standard deviation of acceleration values using Euclidean form measured through body
+
+tGravityAccMag.std    int
+Average of the standard deviation of gravity values using Euclidean form measured through body
+
+tBodyAccJerkMag.std    int
+Average of the standard deviation of jerk signal acceleration values using Euclidean form measured through body
+
+tBodyGyroMag.std    int
+Average of the standard deviation of gyro values using Euclidean form measured through body
+
+tBodyGyroJerkMag.std    int
+Average of the standard deviation of jerk signal gyro values using Euclidean form measured through body
+
+fBodyAcc.std.(X,Y,Z)    int
+Average of the standard deviation of acceleration values measured on the body for (X,Y,Z)-axis with a Fast Fourier Transform applied
+
+fBodyAccJerk.std.(X,Y,Z)    int
+Average of the standard deviation of jerk signal acceleration values measured through body for (X,Y,Z)-axis with a Fast Fourier Transform applied
+
+fBodyGyro.std.(X,Y,Z)    int
+Average of the standard deviation of gyro values measured through body for (X,Y,Z)-axis with a Fast Fourier Transform applied
+
+fBodyAccMag.std    int
+Average of the standard deviation of acceleration values using Euclidean form measured through body with a Fast Fourier Transform applied with a Fast Fourier Transform applied
+
+fBodyAccJerkMag.std    int
+Average of the standard deviation of jerk signal acceleration values using Euclidean form measured through body with a Fast Fourier Transform applied
+
+fBodyGyroMag.std    int
+Average of the standard deviation of gyro values using Euclidean form measured through body with a Fast Fourier Transform applied
+
+fBodyGyroJerkMag.std    int
+Average of the standard deviation of jerk signal gyro values using Euclidean form measured through body with a Fast Fourier Transform applied

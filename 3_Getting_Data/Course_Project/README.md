@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 ###Course Project for Getting Data
 
 ###Author: Scott Lin
+=======
+Course Project for Getting Data
+
+Author: Scott Lin
+===================
+>>>>>>> 7ce2b0f542318c4c9c95bb27dbcfb9d025b59698
 
 The files contained in this repo includes:
 
@@ -10,9 +17,13 @@ run_analysis.R <- the code used to make the project. This pulled data from the s
 
 run_analysisme.R <- exact same file, just with the working directory changed so I can work locally. Please ignore for grading.
 
+<<<<<<< HEAD
 codebook.txt <- codebook for this assignment in txt form
 
 codebook.docx <- prettier version of the codebook with indenting
+=======
+codebook.txt <- codebook for this assignment.
+>>>>>>> 7ce2b0f542318c4c9c95bb27dbcfb9d025b59698
 
 ./UCI HAR Dataset/ <- folder where all the files are pulled from
 
