@@ -2,7 +2,7 @@
 
 ###Author: Scott Lin
 
-The files contained in this repo includes:
+##The files contained in this repo includes:
 
 tidydata.txt <- the output file for the course project
 
